@@ -1,0 +1,10 @@
+version: "3.9" #version of docker-compose
+services:                      #database data volume
+  web:
+   container_name: composeflightapi
+   build: .
+   ports:
+    - "8093:8080"
+networks:
+ default:
+   name: external-compose
